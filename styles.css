@@ -1,0 +1,65 @@
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: inherit;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 90vw;
+    height: 90vh;
+    background-color: beige;
+
+    display: grid;
+    grid-template: 10vh / repeat(4, 1fr);
+    gap: 10px;
+}
+
+.welcome {
+    grid-column: 1 / 4;
+    font-size: 40px;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgreen;
+}
+
+.bookAddMenu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(144, 238, 144, 0.398);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bookAddMenu form {
+    display: grid;
+    grid-template: repeat(5, auto) / repeat(2, auto);
+    gap:2vmin;
+    background-color: rgba(128, 128, 128, 0.507);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.bookAddMenu form input[type='text'] {
+    grid-column: 1 / 3;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
